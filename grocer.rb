@@ -1,6 +1,12 @@
 def consolidate_cart(cart)
-  # code here
-end
+ final = []
+ count = :count
+ cart.each do |food, description|
+   if final.has_key?(fod) == false 
+    final[food] = description
+     final[food][count] = 1 
+   elsif final.has_key?(food)
+   final[food]
 
 def apply_coupons(cart, coupons)
   # code here
