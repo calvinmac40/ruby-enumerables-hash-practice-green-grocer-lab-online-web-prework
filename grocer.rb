@@ -6,7 +6,13 @@ def consolidate_cart(cart)
     final[food] = description
      final[food][count] = 1 
    elsif final.has_key?(food)
-   final[food]
+   final[food][:count] += 1 
+ end
+ end
+ end
+ final
+ end
+ 
 
 def apply_coupons(cart, coupons)
   # code here
